@@ -1,0 +1,147 @@
+:root {
+  --Very-dark-blue: hsl(233, 47%, 7%); /* main background */
+  --Dark-desaturated-blue: hsl(244, 38%, 16%); /* card background */
+  --Soft-violet: hsl(277, 64%, 61%); /* accent */
+  --White: hsl(0, 0%, 100%); /* main heading, stats*/
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /* main paragraph */
+  --Slightly-transparent-w:  hsla(0, 0%, 100%, 0.6); /* stat headings */
+}
+html {
+  font-family: 'Inter';
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  background-color: var(--Very-dark-blue);
+}
+img {
+  width: 100%;
+}
+p {
+  margin: 0;
+  font-family: 'Lexend deca';
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--Slightly-transparent-white);
+}
+
+.card {
+  width: 85%;
+  height: 85%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: var(--Dark-desaturated-blue);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card__figure {
+  position: relative;
+  margin: 0;
+}
+.image-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Soft-violet);
+  opacity: 0.5;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+}
+.card__body h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--White);
+}
+.card__title--purple {
+  color: var(--Soft-violet);
+}
+.card__body div {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.card__body div p {
+  letter-spacing: 0.2em;
+}
+
+.card__intro {
+  margin-bottom: 2em;
+  text-align: center;
+  line-height: 1.7em;
+}
+.card__body--white {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--White);
+}
+
+footer {
+  align-self: flex-end;
+  width: 100%;
+}
+@media (min-width: 460px) {
+  .card {
+    width: 60%;
+  }
+} 
+@media (min-width: 920px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+    max-width: 1081px;
+    height: 50%;
+    max-height: 377px;
+    border-radius: 5px;
+  }
+  .card__body {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+  .card__body h1 {
+    text-align: left;
+  }
+  .card__intro {
+    padding-right: 2em;
+    text-align: left;
+  }
+  .card__figure {
+    width: 65em;
+  }
+  .card__image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .card__body-stats {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+  .card__body-stats div {
+    margin-right: 3em;
+  }
+  .card__body-stats p {
+    font-size: 0.7rem;
+  }
+  .card__body-stats .card__body--white {
+    font-size: 1.4rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+  
+}
