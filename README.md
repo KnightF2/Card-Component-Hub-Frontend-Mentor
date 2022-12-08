@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code solution URL here](https://github.com/fermendoza18/Card-Component-Hub-Frontend-Mentor)
-- Live Site URL: [Live site URL here](https://fermendoza18.github.io/Card-Component-Hub-Frontend-Mentor/)
+- Solution URL: [Code solution URL here](https://github.com/nimrodcode/Card-Component-Hub-Frontend-Mentor)
+- Live Site URL: [Live site URL here](https://nimrodcode.github.io/Card-Component-Hub-Frontend-Mentor/)
 
 ## My process
 
